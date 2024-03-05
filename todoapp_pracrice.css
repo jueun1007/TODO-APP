@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: system-ui;
+  font-size: 20px;
+}
+
+input, button {
+  font-size: inherit;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+}
+
+.todo-app-title {
+  margin: 10px 0px;
+}
+
+.todo-date-section{
+  margin-bottom: 10px;
+  }
+
+select{
+  appearance: none;
+  border: 0px;
+  font-size: 1rem;
+  padding: 0px 2px;
+  cursor: pointer;
+}
+
+select option:hover, select option:checked {
+
+}
+
+
+.todo-input-section {
+  display: flex;  
+  margin: 30px 0px;
+}
+
+.todo-input {
+  flex: 1;
+  flex-grow: 1;
+  margin-right:5px;
+  padding: 10px 10px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.todo-input:focus {
+  outline: 2px solid orange;
+  color: orange;
+}
+
+::placeholder {
+  color:lightgray;
+}
+
+.todo-input-btn {
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: lightgray;
+}
+
+.todo-input-btn:hover,
+.todo-input-btn:active {
+  border: none;
+  cursor: pointer;
+  color: orange;
+}
+
+.todo-list-section {
+  display: flex;
+  justify-content: start;
+}
+
+.todo-list-section ul {
+  list-style: none;
+}
+
+.todo-list-item {
+  display: flex;
+  align-items: start;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.todo-list-section ul li {
+  font-size: 1rem;
+}
+
+.todo-list-check {
+  appearance: none;
+  width: 2.4rem;
+  height: 1.4rem;
+  background-color: orange;
+  border-radius: 0.7rem;
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.todo-list-check:checked {
+  background-color: lightgray;
+}
+
+.todo-list-check:checked + .todo-list-content {
+  color: lightgray;
+}
+
+.todo-list-check:before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  background-color: white;
+  border-radius: 50%;
+  /* transition: 0.2s linear background; */
+}
+
+.todo-list-check:checked:before {
+  transform: translateX(1rem);
+}
+
+
+.todo-list-content {
+  margin-left: 5px;
+}
+
+#memo {
+  border: none;
+  width: 100%;
+  text-wrap: wrap;
+  height: 100%;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin-left: 25px;
+}
+
+#memo:focus {
+  outline: 2px solid orange;
+  color: orange;
+  border-radius: 10px;
+}
+

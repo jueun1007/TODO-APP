@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: system-ui;
+  font-size: 20px;
+}
+
+input, button {
+  font-size: inherit;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+}
+.todo-input-section {
+  display: flex;
+  width: 100%;
+}
+
+.todo-input {
+  padding: 10px 10px;
+  flex: 1;
+}
+
+.todo-list-section ul li {
+  font-size: 1rem;
+}
+
+.todo-list-section ul li input {
+  appearance: none;
+  width: 2.4rem;
+  height: 1.4rem;
+  background-color: black;
+  position: relative;
+  border-radius: 0.7rem;
+  transition: 0.2s linear background;
+}
+
+.todo-list-section ul li input:checked {
+  background-color: cornflowerblue;
+}
+
+.todo-list-section ul li input:before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  background: white;
+  border-radius: 50%;
+  transition: 0.2s linear background;
+}
+
+.todo-list-section ul li input:checked:before {
+  transform: translateX(1rem);
+
+}

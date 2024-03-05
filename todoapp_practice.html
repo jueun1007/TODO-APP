@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo-app</title>
+  <link rel="stylesheet" href="todoapp_pracrice.css">
+  <script src="main.js"></script>
+  <script src="demo.js"></script>
+</head>
+<body>
+  <main class="todo-app">
+    <h1 class="todo-app-title">오늘 할 일</h1>
+    <section class="todo-date-section">
+      <select name="year" id="year">
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+      </select>
+      <select name="month" id="month">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select name="date" id="date">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+      </select>
+      <select name="day" id="day">
+        <option value="mon">Mon</option>
+        <option value="tue">Tue</option>
+        <option value="wed">Wed</option>
+        <option value="thu">Thu</option>
+        <option value="fri">Fri</option>
+        <option value="sat">Sat</option>
+        <option value="sun">Sun</option>
+      </select>
+    </section>
+    <section class="todo-input-section">
+      <input class="todo-input" type="text" placeholder="할 일을 추가해주세요">
+      <button class="todo-input-btn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </section>
+    <section class="todo-list-section">
+      <div>
+        <ul>
+        <li>
+          <label class="todo-list-item">
+            <input class="todo-list-check" type="checkbox">
+            <span class="todo-list-content">코딩복습</span>
+          </label>
+        </li>
+        <li>
+          <label class="todo-list-item">
+            <input class="todo-list-check" type="checkbox">
+            <span class="todo-list-content">예조 건들기</span>
+          </label>
+        </li>
+        <li>
+          <label class="todo-list-item">
+            <input class="todo-list-check" type="checkbox">
+            <span class="todo-list-content">노마드스컬트</span>
+          </label>
+        </li>
+        <li>
+          <label class="todo-list-item">
+            <input class="todo-list-check" type="checkbox">
+            <span class="todo-list-content">복싱</span>
+          </label>
+        </li>
+        <li>
+          <label class="todo-list-item">
+            <input class="todo-list-check" type="checkbox">
+            <span class="todo-list-content">도시락 싸기</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <input type="text" name="memo" id="memo">
+    </div>
+      
+    </section>
+
+    
+  </main>
+  <script
+  src="https://kit.fontawesome.com/097e06b627.js" crossorigin="anonymous">
+  </script>
+</body>
+</html>
