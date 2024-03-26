@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>todo-app</title>
   <link rel="stylesheet" href="todoapp_pracrice.css">
-  <script src="main.js"></script>
-  <script src="demo.js"></script>
 </head>
 <body>
   <main class="todo-app">
-    <h1 class="todo-app-title">오늘 할 일</h1>
+    <h1 class="todo-app-title">TODO LIST</h1>
     <section class="todo-date-section">
       <select name="year" id="year">
         <option value="2024">2024</option>
@@ -74,54 +72,30 @@
       </select>
     </section>
     <section class="todo-input-section">
-      <input class="todo-input" type="text" placeholder="할 일을 추가해주세요">
+      <input class="todo-input" id="todo-input" type="text" placeholder="할 일을 입력해주세요">
       <button class="todo-input-btn">
         <i class="fa-solid fa-plus"></i>
       </button>
-    </section>
+    </section> 
     <section class="todo-list-section">
       <div>
-        <ul>
-        <li>
-          <label class="todo-list-item">
-            <input class="todo-list-check" type="checkbox">
-            <span class="todo-list-content">코딩복습</span>
-          </label>
-        </li>
-        <li>
-          <label class="todo-list-item">
-            <input class="todo-list-check" type="checkbox">
-            <span class="todo-list-content">예조 건들기</span>
-          </label>
-        </li>
-        <li>
-          <label class="todo-list-item">
-            <input class="todo-list-check" type="checkbox">
-            <span class="todo-list-content">노마드스컬트</span>
-          </label>
-        </li>
-        <li>
-          <label class="todo-list-item">
-            <input class="todo-list-check" type="checkbox">
-            <span class="todo-list-content">복싱</span>
-          </label>
-        </li>
-        <li>
-          <label class="todo-list-item">
-            <input class="todo-list-check" type="checkbox">
-            <span class="todo-list-content">도시락 싸기</span>
-          </label>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <input type="text" name="memo" id="memo">
-    </div>
+        <ul class="todo-list-ul">
+          <!-- <li class="todo-list-li">
+            <label class="todo-list-item">
+              <input class="todo-list-check" type="checkbox">
+              <span class="todo-list-content">코딩복습</span>
+            </label>
+          </li> -->
+        
+        </ul>
+      </div>
       
     </section>
 
     
   </main>
+  <script src="main.js"></script>
+  <!-- <script src="demo.js"></script> -->
   <script
   src="https://kit.fontawesome.com/097e06b627.js" crossorigin="anonymous">
   </script>

@@ -32,6 +32,7 @@ select{
   font-size: 1rem;
   padding: 0px 2px;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 select option:hover, select option:checked {
@@ -56,6 +57,7 @@ select option:hover, select option:checked {
 .todo-input:focus {
   outline: 2px solid orange;
   color: orange;
+
 }
 
 ::placeholder {
@@ -77,10 +79,10 @@ select option:hover, select option:checked {
   color: orange;
 }
 
-.todo-list-section {
+/* .todo-list-section {
   display: flex;
   justify-content: start;
-}
+} */
 
 .todo-list-section ul {
   list-style: none;
@@ -91,6 +93,7 @@ select option:hover, select option:checked {
   align-items: start;
   padding: 5px 0px;
   cursor: pointer;
+  position: relative;
 }
 
 .todo-list-section ul li {
@@ -106,6 +109,7 @@ select option:hover, select option:checked {
   position: relative;
   flex-shrink: 0;
   cursor: pointer;
+  justify-content: space-between;
 }
 
 .todo-list-check:checked {
@@ -114,6 +118,8 @@ select option:hover, select option:checked {
 
 .todo-list-check:checked + .todo-list-content {
   color: lightgray;
+  text-decoration: line-through;
+  
 }
 
 .todo-list-check:before {
@@ -132,26 +138,16 @@ select option:hover, select option:checked {
   transform: translateX(1rem);
 }
 
-
 .todo-list-content {
   margin-left: 5px;
 }
 
-#memo {
+.todo-list-delete {
+  background-color: transparent;
+  padding: 3px 0px;
   border: none;
-  width: 100%;
-  text-wrap: wrap;
-  height: 100%;
-  padding: 10px;
-  text-align: left;
-  vertical-align: top;
-  box-sizing: border-box;
-  margin-left: 25px;
+  color: lightgray;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
 }
-
-#memo:focus {
-  outline: 2px solid orange;
-  color: orange;
-  border-radius: 10px;
-}
-
